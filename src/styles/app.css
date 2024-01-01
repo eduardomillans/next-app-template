@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .light {
+        --color-gray-1: 240 20% 99%;
+        --color-gray-2: 240 20% 98%;
+        --color-gray-3: 240 11.1% 94.7%;
+        --color-gray-4: 240 9.5% 91.8%;
+        --color-gray-5: 230 10.7% 89%;
+        --color-gray-6: 240 10.1% 86.5%;
+        --color-gray-7: 233 9.9% 82.2%;
+        --color-gray-8: 231 10.2% 75.1%;
+        --color-gray-9: 231 5.9% 57.1%;
+        --color-gray-10: 226 5.4% 52.7%;
+        --color-gray-11: 220 5.9% 40%;
+        --color-gray-12: 210 12.5% 12.5%;
+
+        --color-primary-1: 0 0% 9%;
+        --color-primary-2: 0 0% 22%;
+        --color-primary-3: 0 0% 100%;
+
+        --color-success-1: 139 47.8% 91%;
+        --color-success-2: 141 43.7% 86.1%;
+        --color-success-3: 153 66.9% 28.4%;
+
+        --color-danger-1: 0 100% 94.9%;
+        --color-danger-2: 0 90.2% 92%;
+        --color-danger-3: 358 65% 47.1%;
+    }
+
+    .dark {
+        --color-gray-1: 240 5.6% 7.1%;
+        --color-gray-2: 220 5.9% 10%;
+        --color-gray-3: 225 5.7% 13.7%;
+        --color-gray-4: 210 7.1% 16.5%;
+        --color-gray-5: 214 7.1% 19.4%;
+        --color-gray-6: 213 7.7% 22.9%;
+        --color-gray-7: 213 7.6% 28.4%;
+        --color-gray-8: 212 7.7% 38.2%;
+        --color-gray-9: 219 6.3% 43.9%;
+        --color-gray-10: 222 5.2% 49.2%;
+        --color-gray-11: 216 6.8% 71%;
+        --color-gray-12: 220 9.1% 93.5%;
+
+        --color-primary-1: 0 0% 92.9%;
+        --color-primary-2: 0 0% 83.5%;
+        --color-primary-3: 0 0% 3.9%;
+
+        --color-success-1: 143 100% 11%;
+        --color-success-2: 143 100% 9.8%;
+        --color-success-3: 145 81% 95.9%;
+
+        --color-danger-1: 0 62.8% 30.6%;
+        --color-danger-2: 0 62.9% 27.5%;
+        --color-danger-3: 0 85.7% 97.3%;
+    }
+
+    :root {
+        --color-background: var(--color-gray-1);
+        --color-foreground: var(--color-gray-12);
+    }
+
+    * {
+        @apply border-gray-6;
+    }
+
+    html {
+        @apply scroll-smooth antialiased;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+.lucide {
+    @apply w-4 h-4;
+}
